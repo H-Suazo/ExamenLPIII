@@ -21,7 +21,7 @@ namespace Datos_.Acceso
 
             try
             {
-                string sql = "INSERT INTO producto VALUES (@Codigo, @Descripcion, @Precio, @Existencia);";
+                string sql = "INSERT INTO pedido VALUES (@Id, @Cantidad, @Precio, @Total, @CodigoProducto, @Descripcion);";
                 
                 conn = new MySqlConnection(cadena);
                 conn.Open();
